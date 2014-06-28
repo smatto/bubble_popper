@@ -71,7 +71,7 @@ function draw() {
 //update text info about balls
 function updateInfo() {
     document.getElementById("numbers").innerHTML = "Number of balls:" + balls.length;
-    if (balls.length == 0) {
+    if (balls.length === 0) {
         document.getElementById("numbers").innerHTML = "No balls, you win!";
     }
 }
