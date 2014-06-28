@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-    
     <head>
-        <title>Bubble Popper</title>
-        </title>
-        <link rel="stylesheet" type="text/css" href="styles/bubble_popper.css" />
+        <title></title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >    
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="styles/bubble_popper.css">
     </head>
-    
     <body>
-        <canvas id="canvas" width="1500" height="600"></canvas>
-         <h1>Balls shrink and disappear when they touch. Click to make new balls. Try to clear all the balls.</h1>
-
-         <h1 id="numbers">Number of balls<h1>
-        <script type="text/javascript" src="js/bubble_popper.js"></script>
+    <div class="container center-block">
+        <div class="row"><canvas id="canvas" width="1000" height="600"></canvas></div>
+        <div class="row" id="instructions">Balls shrink and disappear when they touch. Click to make new balls. Try to clear all the balls.</div>
+        <div class="row" id="numbers">Number of balls.</div>
+    </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="js/bubble_popper.js"></script>
     </body>
 </html>
